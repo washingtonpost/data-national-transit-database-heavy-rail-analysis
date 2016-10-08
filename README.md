@@ -2,6 +2,10 @@
 
 This data is published under an [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+Read the Washington Post story: ["In safety and reliability, Metro ranks in middle of the pack of nation’s big systems"](https://www.washingtonpost.com/local/trafficandcommuting/in-safety-and-reliability-metro-ranks-in-middle-of-the-pack-of-nations-big-systems/2016/10/08/aa7bb5a6-59b4-11e6-831d-0324760ca856_story.html)
+
+Read the analysis: https://washingtonpost.github.io/data-national-transit-database-heavy-rail-analysis/ntd-analysis.html
+
 The Washington Post analyzed safety and reliability figures for the nine largest U.S. heavy rail systems. All data is from the Federal Transit Administration’s National Transit Database (NTD). The American Public Transportation Association (APTA) assisted in obtaining some data from the NTD, but The Post conducted the analysis and interpretation of it.
 
 The figures used are the most recent available. 2015 safety event rates were computed using service volume figures from 2014.
