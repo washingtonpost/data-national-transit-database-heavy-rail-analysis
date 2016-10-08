@@ -152,17 +152,8 @@ ntd.safety &lt;-
   merge(safety, by=c('Year', 'NTDID'), all.y = TRUE, suffixes=c(&quot;&quot;, &quot;.safety&quot;)) %&gt;%
   merge(ntdid.lookup, by='NTDID') %&gt;%
   mutate(acronym = reorder(acronym, desc(Passenger.Miles.Traveled.safety)))
-  
-ntd.safety.2014 &lt;-
-  ntd.safety %&gt;%
-  filter(Year == 2014) %&gt;%
-  mutate(
-    acronym.vrm = reorder(acronym, Vehicle...Pass..Car.Revenue.Miles),
-    acronym.pmt = reorder(acronym, as.numeric(Passenger.Miles.Traveled.safety)),
-    acronym.upt = reorder(acronym, Unlinked.Passenger.Trips),
-    acronym.trm = reorder(acronym, Train.Revenue.Miles)
-  )
 
+# Calculate average system size metrics for 2008-2014
 ntd.safety.avg &lt;-
   ntd.safety %&gt;%
   filter(Year &lt; 2015, Year &gt; 2007) %&gt;%
@@ -3073,72 +3064,6 @@ avg.table(collision.8avg)</code></pre>
 <td align="right">11.800</td>
 <td align="right">8.430</td>
 <td align="right">1.42e+00</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th align="left">var</th>
-<th align="right">NYCT</th>
-<th align="right">WMATA</th>
-<th align="right">BART</th>
-<th align="right">CTA</th>
-<th align="right">MBTA</th>
-<th align="right">MARTA</th>
-<th align="right">SEPTA</th>
-<th align="right">LACMTA</th>
-<th align="right">MDT</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Employee fatalities per billion passenger miles</td>
-<td align="right">0.0479</td>
-<td align="right">0.471</td>
-<td align="right">0.245</td>
-<td align="right">0.00</td>
-<td align="right">0.000</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="right">0.00</td>
-<td align="right">1.73</td>
-</tr>
-<tr class="even">
-<td align="left">Employee injuries per billion passenger miles</td>
-<td align="right">2.4600</td>
-<td align="right">11.200</td>
-<td align="right">0.491</td>
-<td align="right">19.30</td>
-<td align="right">6.570</td>
-<td align="right">13.30</td>
-<td align="right">23.50</td>
-<td align="right">10.10</td>
-<td align="right">4.33</td>
-</tr>
-<tr class="odd">
-<td align="left">People waiting or leaving fatalities per billion passenger miles</td>
-<td align="right">0.7310</td>
-<td align="right">0.549</td>
-<td align="right">0.736</td>
-<td align="right">1.92</td>
-<td align="right">0.876</td>
-<td align="right">1.28</td>
-<td align="right">2.29</td>
-<td align="right">1.06</td>
-<td align="right">1.73</td>
-</tr>
-<tr class="even">
-<td align="left">People waiting or leaving injuries per billion passenger miles</td>
-<td align="right">410.0000</td>
-<td align="right">166.000</td>
-<td align="right">320.000</td>
-<td align="right">221.00</td>
-<td align="right">334.000</td>
-<td align="right">338.00</td>
-<td align="right">156.00</td>
-<td align="right">249.00</td>
-<td align="right">467.00</td>
 </tr>
 </tbody>
 </table>
